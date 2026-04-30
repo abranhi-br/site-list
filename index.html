@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abranhi — Sistemas Online</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      max-width: 560px;
+      width: 100%;
+      padding: 3rem 2.5rem 2.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .logo-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #2b6cb0;
+    }
+
+    .logo-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2b6cb0;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #1a202c;
+      margin-bottom: 0.6rem;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      color: #718096;
+      line-height: 1.5;
+    }
+
+    .divider {
+      height: 1px;
+      background: #e2e8f0;
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.2rem;
+      background: #f7fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #2d3748;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s, box-shadow 0.15s;
+    }
+
+    .link-btn:hover {
+      background: #ebf4ff;
+      border-color: #90cdf4;
+      box-shadow: 0 2px 8px rgba(66, 153, 225, 0.15);
+      transform: translateY(-1px);
+      color: #2b6cb0;
+    }
+
+    .link-btn:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .link-btn .label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .link-btn .title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .link-btn .url {
+      font-size: 0.78rem;
+      color: #718096;
+      font-weight: 400;
+    }
+
+    .link-btn:hover .url {
+      color: #4299e1;
+    }
+
+    .arrow {
+      color: #a0aec0;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .link-btn:hover .arrow {
+      color: #2b6cb0;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #a0aec0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <div class="logo-dot"></div>
+      <span class="logo-text">Abranhi</span>
+    </div>
+
+    <header>
+      <h1>O que a Abranhi oferece</h1>
+      <p>O objetivo deste site é agregar nossos sistemas online</p>
+    </header>
+
+    <div class="divider"></div>
+
+    <nav class="links">
+      <a class="link-btn" href="https://www.abranhi.org.br" target="_blank" rel="noopener noreferrer">
+        <span class="label">
+          <span class="title">Site Principal</span>
+          <span class="url">www.abranhi.org.br</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://www.abranhi.org.br/wp-admin" target="_blank" rel="noopener noreferrer">
+        <span class="label">
+          <span class="title">Administração do Site Principal</span>
+          <span class="url">www.abranhi.org.br/wp-admin</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://monitoramento.abranhi.org.br" target="_blank" rel="noopener noreferrer">
+        <span class="label">
+          <span class="title">Monitoramento</span>
+          <span class="url">monitoramento.abranhi.org.br</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://calculadoradesono.abranhi.org.br" target="_blank" rel="noopener noreferrer">
+        <span class="label">
+          <span class="title">Calculadora de Sono</span>
+          <span class="url">calculadoradesono.abranhi.org.br</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://tutoriais.abranhi.org.br" target="_blank" rel="noopener noreferrer">
+        <span class="label">
+          <span class="title">Tutoriais de Como Conseguir Remédios</span>
+          <span class="url">tutoriais.abranhi.org.br</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+    </nav>
+
+    <footer>
+      &copy; 2026 Abranhi. Todos os direitos reservados.
+    </footer>
+  </div>
+</body>
+</html>
